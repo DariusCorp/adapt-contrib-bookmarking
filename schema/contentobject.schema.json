@@ -10,31 +10,31 @@
       "properties": {
         "_bookmarking": {
           "type": "object",
-          "title": "Bookmarking",
+          "title": "Marcaj",
           "default": {},
           "required": [
-            "_level"
+        "_level"
           ],
           "properties": {
-            "_isEnabled": {
-              "type": "boolean",
-              "title": "Enable Bookmarking",
-              "description": "Controls whether Bookmarking is enabled or disabled for this page of the course",
-              "default": true
-            },
-            "_level": {
-              "type": "string",
-              "title": "Level",
-              "description": "Whether you want to inherit the 'Level' setting from Project settings or override it for this page of the course",
-              "default": "inherit",
-              "enum": [
-                "inherit",
-                "page",
-                "block",
-                "component"
-              ],
-              "_backboneForms": "Select"
-            }
+        "_isEnabled": {
+          "type": "boolean",
+          "title": "Activare Marcaj",
+          "description": "Controlează dacă funcția de marcaj este activată sau dezactivată pentru această pagină a cursului",
+          "default": true
+        },
+        "_level": {
+          "type": "string",
+          "title": "Nivel",
+          "description": "Dacă doriți să preluați setarea 'Nivel' din setările proiectului sau să o suprascrieți pentru această pagină a cursului",
+          "default": "inherit",
+          "enum": [
+            "inherit",
+            "page",
+            "block",
+            "component"
+          ],
+          "_backboneForms": "Select"
+        }
           }
         }
       }

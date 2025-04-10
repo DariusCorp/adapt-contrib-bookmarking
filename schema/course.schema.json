@@ -18,12 +18,12 @@
               "properties": {
                 "_bookmarking": {
                   "type": "object",
-                  "title": "Bookmarking",
+                  "title": "Marcaj",
                   "default": {},
                   "properties": {
                     "resumeButtonText": {
                       "type": "string",
-                      "title": "Resume button text",
+                      "title": "Text buton reluare",
                       "default": "Resume",
                       "_adapt": {
                         "translatable": true
@@ -31,8 +31,8 @@
                     },
                     "resumeButtonAriaLabel": {
                       "type": "string",
-                      "title": "Resume ARIA label",
-                      "default": "Navigate to your furthest point of progress.",
+                      "title": "Etichetă ARIA pentru reluare",
+                      "default": "Navighează până la cel mai îndepărtat punct de progres.",
                       "_adapt": {
                         "translatable": true
                       }
@@ -45,7 +45,7 @@
         },
         "_bookmarking": {
           "type": "object",
-          "title": "Bookmarking",
+          "title": "Marcaj",
           "default": {},
           "required": [
             "_level",
@@ -54,14 +54,14 @@
           "properties": {
             "_isEnabled": {
               "type": "boolean",
-              "title": "Enable Bookmarking",
-              "description": "Controls whether the Bookmarking extension is enabled or disabled",
+              "title": "Activează marcajul",
+              "description": "Controlează dacă extensia de marcaj este activată sau dezactivată",
               "default": true
             },
             "_level": {
               "type": "string",
-              "title": "Level",
-              "description": "Allows you to set whether Bookmarking is done at page, block or component level",
+              "title": "Nivel",
+              "description": "Permite setarea nivelului de marcaj: pagină, bloc sau componentă",
               "default": "component",
               "enum": [
                 "page",
@@ -72,8 +72,8 @@
             },
             "_location": {
               "type": "string",
-              "title": "Location",
-              "description": "Allows you to set whether Bookmarking takes learners back to their last previously visited location or your furthest incomplete location. The furthest option will pair best in a course with linear progression.",
+              "title": "Locație",
+              "description": "Permite setarea locației de revenire: ultima locație vizitată sau cea mai îndepărtată locație incompletă. Opțiunea 'cea mai îndepărtată' se potrivește cel mai bine într-un curs cu progresie liniară.",
               "default": "previous",
               "enum": [
                 "previous",
@@ -83,49 +83,49 @@
             },
             "_showPrompt": {
               "type": "boolean",
-              "title": "Enable prompt",
-              "description": "Controls whether the Bookmarking prompt is enabled or disabled. If not enabled, the user will be returned to their bookmarked position automatically",
+              "title": "Activează promptul",
+              "description": "Controlează dacă promptul de marcaj este activat sau dezactivat. Dacă nu este activat, utilizatorul va fi redirecționat automat la poziția marcată.",
               "default": true
             },
             "_autoRestore": {
               "type": "boolean",
-              "title": "Auto restore",
-              "description": "Controls whether the Bookmarking will automatically restore if the prompt is disabled. If not enabled, the user will be not be automatically returned to their bookmarked position.",
+              "title": "Restaurare automată",
+              "description": "Controlează dacă marcajul va fi restaurat automat dacă promptul este dezactivat. Dacă nu este activat, utilizatorul nu va fi redirecționat automat la poziția marcată.",
               "default": true
             },
             "title": {
               "type": "string",
-              "title": "Prompt title",
-              "default": "Bookmarking",
+              "title": "Titlu prompt",
+              "default": "Marcaj",
               "_adapt": {
                 "translatable": true
               }
             },
             "body": {
               "type": "string",
-              "title": "Prompt body",
-              "default": "Would you like to continue where you left off?",
+              "title": "Corp prompt",
+              "default": "Doriți să continuați de unde ați rămas?",
               "_adapt": {
                 "translatable": true
               }
             },
             "_buttons": {
               "type": "object",
-              "title": "Prompt buttons",
+              "title": "Butoane prompt",
               "default": {},
               "properties": {
                 "yes": {
                   "type": "string",
-                  "title": "Confirm button text",
-                  "default": "Yes",
+                  "title": "Text buton confirmare",
+                  "default": "Da",
                   "_adapt": {
                     "translatable": true
                   }
                 },
                 "no": {
                   "type": "string",
-                  "title": "Cancel button text",
-                  "default": "No",
+                  "title": "Text buton anulare",
+                  "default": "Nu",
                   "_adapt": {
                     "translatable": true
                   }

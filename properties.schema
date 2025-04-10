@@ -7,7 +7,7 @@
     "resumeButtonText": {
       "type": "string",
       "required": true,
-      "title": "Resume button text",
+      "title": "Textul butonului de reluare",
       "default": "Resume",
       "inputType": "Text",
       "validators": [],
@@ -16,7 +16,7 @@
     "resumeButtonAriaLabel": {
       "type": "string",
       "required": true,
-      "title": "Resume ARIA label",
+      "title": "Eticheta ARIA pentru reluare",
       "default": "Navigate to your furthest point of progress.",
       "inputType": "Text",
       "validators": [],
@@ -37,16 +37,16 @@
             "_bookmarking": {
               "type": "object",
               "required": false,
-              "legend": "Bookmarking",
+              "legend": "Marcaj",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Este activat",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Bookmarking extension is enabled or disabled."
+                  "help": "Controlează dacă extensia de marcaj este activată sau dezactivată."
                 },
                 "_level": {
                   "type": "string",
@@ -57,7 +57,7 @@
                     "component"
                   ],
                   "default": "component",
-                  "title": "Level",
+                  "title": "Nivel",
                   "inputType": {
                     "type": "Select",
                     "options": [
@@ -67,7 +67,7 @@
                     ]
                   },
                   "validators": ["required"],
-                  "help": "Allows you to set whether Bookmarking is done at page, block or component level."
+                  "help": "Permite setarea nivelului la care se face marcajul: pagină, bloc sau componentă."
                 },
                 "_location": {
                   "type": "string",
@@ -77,7 +77,7 @@
                     "furthest"
                   ],
                   "default": "previous",
-                  "title": "Location",
+                  "title": "Locație",
                   "inputType": {
                     "type": "Select",
                     "options": [
@@ -86,31 +86,31 @@
                     ]
                   },
                   "validators": ["required"],
-                  "help": "Allows you to set whether Bookmarking takes learners back to their last previously visited location or your furthest incomplete location. The furthest option will pair best in a course with linear progression."
+                  "help": "Permite setarea locației la care utilizatorii sunt duși: ultima locație vizitată sau cea mai îndepărtată locație incompletă. The furthest option will pair best in a course with linear progression."
                 },
                 "_showPrompt": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Show prompt",
+                  "title": "Afișează promptul",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Bookmarking prompt is enabled or disabled. If not enabled, the user will be returned to their bookmarked position automatically."
+                  "help": "Controlează dacă promptul de marcaj este activat sau dezactivat. Dacă nu este activat, utilizatorul va fi returnat automat la poziția marcată."
                 },
                 "_autoRestore": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Auto restore",
+                  "title": "Restaurare automată",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether the Bookmarking will automatically restore if the prompt is disabled. If not enabled, the user will be not be automatically returned to their bookmarked position."
+                  "help": "Controlează dacă marcajul va restaura automat poziția dacă promptul este dezactivat. If not enabled, the user will be not be automatically returned to their bookmarked position."
                 },
                 "title": {
                   "type": "string",
                   "default": "Bookmarking",
                   "required": true,
-                  "title": "Prompt Title",
+                  "title": "Titlul promptului",
                   "inputType": "Text",
                   "validators": [],
                   "translatable": true
@@ -119,14 +119,14 @@
                   "type": "string",
                   "default": "Would you like to continue where you left off?",
                   "required": false,
-                  "title": "Prompt Message",
+                  "title": "Mesajul promptului",
                   "inputType": "Text",
                   "validators": [],
                   "translatable": true
                 },
                 "_buttons": {
                   "type": "object",
-                  "title": "Prompt Buttons",
+                  "title": "Butoanele promptului",
                   "properties": {
                     "yes": {
                       "type": "string",
@@ -156,16 +156,16 @@
             "_bookmarking": {
               "type": "object",
               "required": false,
-              "legend": "Bookmarking",
+              "legend": "Marcaj",
               "properties": {
                 "_isEnabled": {
                   "type": "boolean",
                   "required": true,
                   "default": true,
-                  "title": "Is enabled",
+                  "title": "Este activat",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Controls whether Bookmarking is enabled or disabled for this page of the course."
+                  "help": "Controlează dacă marcajul este activat sau dezactivat pentru această pagină a cursului."
                 },
                 "_level": {
                   "type": "string",
@@ -177,7 +177,7 @@
                     "component"
                   ],
                   "default": "inherit",
-                  "title": "Level",
+                  "title": "Nivel",
                   "inputType": {
                     "type": "Select",
                     "options": [
@@ -188,7 +188,7 @@
                     ]
                   },
                   "validators": ["required"],
-                  "help": "Whether you want to inherit the 'Level' setting from Project settings or override it for this page of the course."
+                  "help": "Permite moștenirea setării 'Nivel' din setările proiectului sau suprascrierea acesteia pentru această pagină a cursului."
                 }
               }
             }
