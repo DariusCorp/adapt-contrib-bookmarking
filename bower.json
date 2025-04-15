@@ -1,12 +1,12 @@
 {
   "name": "adapt-contrib-bookmarking",
-  "version": "4.3.2",
+  "version": "4.3.3",
   "framework": ">=5.31.11",
   "homepage": "https://github.com/adaptlearning/adapt-contrib-bookmarking",
   "bugs": "https://github.com/adaptlearning/adapt-contrib-bookmarking/issues",
   "extension": "bookmarking",
-  "displayName": "Bookmarking",
-  "description": "An extension that tracks the learner's location in the course so that it can return them to that location in a subsequent session",
+  "displayName": "Marcaj",
+  "description": "O extensie care urmărește locația cursantului în curs, astfel încât să-l poată readuce în acea locație într-o sesiune ulterioară",
   "main": "/js/adapt-contrib-bookmarking.js",
   "keywords": [
     "adapt-plugin",
